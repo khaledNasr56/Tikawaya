@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="shortcut icon" href="./assets/images/Logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/normalize.css">
+    <link rel="stylesheet" href="./assets/css/login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Start Login Form -->
+    <div class="login">
+        <h1>Hi, Welcome to Tikawe</h1>
+        <p>New here? <a href="signUp.html">Create an account.</a></p>
+        <form action="index.html">
+            <div class="mail">
+                <label class="labl" for="mail">Email Address</label>
+                <br>    
+                <input class="email" type="email" name="Email" id="mail" required placeholder="Example@gmail.com">
+                <img src="./assets/images/sms.png" alt="">
+            </div>
+            <div class="pass">
+                <label class="labl" for="pass">Password</label>
+                <br>
+                <input class="password" type="password" name="passeord" id="pass" required placeholder="Enter Your Password" minlength="8" maxlength="20">
+                <img src="./assets/images/eye-slash.png" class="eye" alt="">
+                <img src="./assets/images/lock.png" class="lock" alt="">
+            </div>
+            <div class="box">
+                <div class="text">
+                    <input type="checkbox" name="remember" id="remember"> 
+                    <label style="font-weight: bold;" for="remember">Remember this device</label>
+                </div>
+                <a href="forgetPass.html">Forgot your password?</a>
+            </div>
+            <input type="submit" value="Login" class="log-in">
+            <p>or login with</p>
+            <a class="google" href="index.html">Sign up with Google</a>
+            <img src="assets/images/Google.png" alt="">
+            <a class="apple" href="index.html">Sign up with Email</a>
+            <img src="assets/images/Vector5.png" alt="">
+        </form>
+    </div>
+    <!-- End Login Form -->
+    <script src="./assets/js/login.js"></script>
+</body>
+</html>
